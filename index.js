@@ -75,7 +75,7 @@ const convertLinksToMarkdown = (item) => {
   try {
     console.log("Running at", DateTime.now().toISO());
 
-    if(!config.util.getEnv('DISCORD_WEBHOOK_URL')) {
+    if(!process.env.DISCORD_WEBHOOK_URL) {
       console.error("DISCORD_WEBHOOK_URL not set, exiting");
       return;
     }
