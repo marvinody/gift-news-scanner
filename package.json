@@ -12,6 +12,7 @@
   "dependencies": {
     "axios": "^1.7.3",
     "config": "^3.3.12",
+    "dotenv": "^16.4.5",
     "luxon": "^3.5.0",
     "node-html-parser": "^6.1.13"
   }
