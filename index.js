@@ -85,8 +85,8 @@ const convertLinksToMarkdown = (item) => {
     const newsUrlFormat = config.get("gift.newsUrlFormat");
     
     const dateFormat = config.get("gift.dateFormat");
-    // const date = DateTime.now().toFormat(dateFormat);
-    const date = DateTime.now().minus({ days: 13 }).toFormat(dateFormat);
+    const date = DateTime.now().toFormat(dateFormat);
+    // const date = DateTime.now().minus({ days: 13 }).toFormat(dateFormat);
     const url = util.format(newsUrlFormat, baseUrl, date);
     console.log("Fetching data from", url);
 
@@ -117,7 +117,7 @@ const convertLinksToMarkdown = (item) => {
     console.log("No new news items");
   } catch (error) {
     if (axios.isAxiosError(error)) {
-      if (error.status === 404) {
+      if (error.response.status === 404) {
         console.error("Month has no data, exiting");
         return;
       }
