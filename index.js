@@ -98,7 +98,7 @@ const convertLinksToMarkdown = (item) => {
     // new month with new data, save everything and update
     if (data?.date !== date) {
       console.log("New month, saving data");
-      await sendWebhook(`New month, ${newsItems.length} news items`);
+      await sendWebhook(url, newsItems);
       await saveData({ date, newsItemCount: newsItems.length });
       return;
     }
