@@ -1,0 +1,22 @@
+{
+  "data": {
+    "location": "data.json"
+  },
+  "discord": {
+    "maxSize": 4000,
+    "webhook": "PASS IN DISCORD_WEBHOOK_URL as an environment variable",
+    "embed": {
+      "title": "New News Detected",
+      "author": {
+        "name": "Gift News Hunter"
+      },
+      "color": 16423199
+    }
+  },
+  "gift": {
+    "baseUrl": "https://www.gift-gift.jp",
+    "newsUrlFormat": "%s/news/%s.html",
+    "dateFormat": "yyyyMM",
+    "newsSelector": ".news-item"
+  }
+}

@@ -1,0 +1,95 @@
+# Ignore node_modules directory
+node_modules/
+
+data.json
+
+# Ignore logs and build artifacts
+logs/
+dist/
+build/
+
+# Ignore environment-specific files
+.env
+.env.local
+.env.*.local
+
+# Ignore npm debug log
+npm-debug.log*
+
+# Ignore yarn.lock file
+yarn.lock
+
+# Ignore .DS_Store files (macOS)
+.DS_Store
+
+# Ignore .vscode directory (Visual Studio Code)
+.vscode/
+
+# Ignore .idea directory (JetBrains IDEs)
+.idea/
+
+# Ignore .cache directory (Gatsby.js)
+.cache/
+
+# Ignore coverage directory (code coverage reports)
+coverage/
+
+# Ignore .eslintcache file (ESLint cache)
+.eslintcache
+
+# Ignore .prettiercache file (Prettier cache)
+.prettiercache
+
+# Ignore .nyc_output directory (NYC code coverage)
+.nyc_output/
+
+# Ignore .next directory (Next.js)
+.next/
+
+# Ignore out directory (TypeScript)
+out/
+
+# Ignore dist directory (Webpack)
+dist/
+
+# Ignore .history directory (Visual Studio Code Live Share)
+.history/
+
+# Ignore .svelte-kit directory (SvelteKit)
+.svelte-kit/
+
+# Ignore .vercel directory (Vercel)
+.vercel/
+
+# Ignore .firebase directory (Firebase)
+.firebase/
+
+# Ignore .serverless directory (Serverless Framework)
+.serverless/
+
+# Ignore .netlify directory (Netlify)
+.netlify/
+
+# Ignore .yarn directory (Yarn PnP)
+.yarn/
+
+# Ignore .pnp directory (Yarn PnP)
+.pnp/
+
+# Ignore .yarnrc.yml file (Yarn PnP)
+.yarnrc.yml
+
+# Ignore .env.* files (Environment-specific files)
+.env.*
+
+# Ignore .env.local files (Local environment files)
+.env.local.*
+
+# Ignore .env.development.local files (Development environment files)
+.env.development.local.*
+
+# Ignore .env.test.local files (Test environment files)
+.env.test.local.*
+
+# Ignore .env.production.local files (Production environment files)
+.env.production.local.*
